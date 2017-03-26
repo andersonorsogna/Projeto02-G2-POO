@@ -41,27 +41,27 @@ public class HomeServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             
-            out.println("<Table border='1'>");
+            out.println("<center>");
             
-            out.println("<tr>");
-            out.println("<td colspan='2'>");
-            out.println("<img src='Img/icon-fin-pb.jpg' width='20' height='20'/>");
+            out.println("<h1>")
+            out.println("<img src='Img/icon-fin-pb.jpg' width='30' height='30'/>");
             out.println("Juros Simples - Juros Composto");
-            out.println("</td>");
-            out.println("</tr>");
+            out.println("</h1>")
             
+            out.println("<Table width='920'>");
+                        
             out.println("<tr>");
             out.println("<td>");
-            out.println("Integrantes: <br/><br/>-Anderson Orsogna Esteves<br/>-André<br/>-João<br/>-Raul<br/>");
+            out.println("<b>Integrantes:</b> <br/><br/>-Anderson Orsogna Esteves<br/>-André Tripode Colognesi<br/>-João Augusto V. Viana<br/>-Raul Seixas 10.000 anos atrás<br/>");
             out.println("</td>");
-            out.println("<td>");
-            out.println("<img src='Img/financeiro022.jpg'/>");
+            out.println("<td width='620'>");
+            out.println("<img src='Img/financeiro022.jpg' width='620' height='350'/>");
             out.println("</td>");
             out.println("</tr>");
             
             out.println("<tr>");
             out.println("<td colspan='2'>");
-            out.println("Aplicação<br/><br/>"
+            out.println("<h2>Aplicação</h2><br/><br/>"
                     + "<u><b>Juros Simples:</u></b><br/>"
                     + "O regime de juros será simples quando o percentual de juros incidir apenas sobre o valor principal. Sobre os juros gerados a cada período não incidirão novos juros. Valor Principal ou simplesmente principal é o valor inicial emprestado ou aplicado, antes de somarmos os juros.<br/>"
                     + "<u><b>Juros Composto:</u></b><br/>"
@@ -69,7 +69,16 @@ public class HomeServlet extends HttpServlet {
             out.println("</td>");
             out.println("</tr>");
             
+            out.println("<tr>");
+            out.println("<td colspan='2'>");
+            out.println("<a href='js.html'><img src='Img/btn-js.jpg'/></a>");
+            out.println("<a href='jc.html'><img src='Img/btn-jc.jpg'/></a>");
+            out.println("</td>");
+            out.println("</tr>");
+            
             out.println("</Table>");
+            
+            out.println("</center>");
             
             out.println("</body>");
             out.println("</html>");
