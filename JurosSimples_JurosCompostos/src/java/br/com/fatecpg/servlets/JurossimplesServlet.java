@@ -50,6 +50,8 @@ public class JurossimplesServlet extends HttpServlet {
             
             out.println("</center>");
             
+            out.println("<a href='home.html'><img src='Img/btn-vt.jpg'/></a>");
+            
             out.println("</body>");
             out.println("</html>");
         }
