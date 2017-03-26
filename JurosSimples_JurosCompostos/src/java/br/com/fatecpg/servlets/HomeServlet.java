@@ -43,10 +43,10 @@ public class HomeServlet extends HttpServlet {
             
             out.println("<center>");
             
-            out.println("<h1>")
+            out.println("<h1>");
             out.println("<img src='Img/icon-fin-pb.jpg' width='30' height='30'/>");
             out.println("Juros Simples - Juros Composto");
-            out.println("</h1>")
+            out.println("</h1>");
             
             out.println("<Table width='920'>");
                         
