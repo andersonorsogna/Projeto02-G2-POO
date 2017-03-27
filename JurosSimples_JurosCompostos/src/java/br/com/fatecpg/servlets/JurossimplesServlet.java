@@ -54,7 +54,8 @@ public class JurossimplesServlet extends HttpServlet {
                 int n = 1;
                 try{ n = Integer.parseInt(request.getParameter("n"));
                 }catch(Exception ex){}
-                j = c*(1 +(t*n));
+                j = c*( +(t*n));
+                float m = j/100 + c;
             
             out.println("<center>");
            
@@ -111,13 +112,12 @@ public class JurossimplesServlet extends HttpServlet {
             out.println("</tr>");
             
             out.println("<tr>");
-            out.println("<td>Valor do juros</td>");
-            //out.println("j = c*(t/100)*n");
-            //out.println("<td>" + j == c*(1 +(t*n)) +"</td>");
+            out.println("<td>Valor do juros:</td>");
+           
             out.println("<td>" + "R$ "  + j/100 + "</td>");
-           // out.println("<td>" + j == c + "</td>");
-            //out.println("<td>" + j + "</td>");
-            //out.println
+            out.println("<td>Total do montante:</td>");
+            out.println("<td>" + "R$ " + m + "</td>");
+        
             out.println("</tr>");
             
             out.println("</Table>");
