@@ -43,15 +43,15 @@ public class JurossimplesServlet extends HttpServlet {
            
                 float j = 0;
                 
-                int c = 1;
+                int c = 0;
                 try{ c = Integer.parseInt(request.getParameter("c"));
                 }catch(Exception ex){}
                 
-                int t = 1;
+                int t = 0;
                 try{ t = Integer.parseInt(request.getParameter("t"));
                 }catch(Exception ex){}
                 
-                int n = 1;
+                int n = 0;
                 try{ n = Integer.parseInt(request.getParameter("n"));
                 }catch(Exception ex){}
                 j = c*( +(t*n));
