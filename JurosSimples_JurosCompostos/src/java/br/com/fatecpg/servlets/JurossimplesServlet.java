@@ -40,9 +40,23 @@ public class JurossimplesServlet extends HttpServlet {
             out.println("<title> :: Juros Simples ::</title>");            
             out.println("</head>");
             out.println("<body>");
+           
+                int j;
+                
+                int c = 1;
+                try{ c = Integer.parseInt(request.getParameter("c"));
+                }catch(Exception ex){}
+                
+                int t = 1;
+                try{ t = Integer.parseInt(request.getParameter("t"));
+                }catch(Exception ex){}
+                
+                int n = 1;
+                try{ n = Integer.parseInt(request.getParameter("n"));
+                }catch(Exception ex){}
             
             out.println("<center>");
-            
+           
             out.println("<h1>");
             out.println("<img src='Img/icon-fin-pb.jpg' width='30' height='30'/>");
             out.println("Juros Simples");
@@ -50,7 +64,60 @@ public class JurossimplesServlet extends HttpServlet {
             
             out.println("</center>");
             
-            out.println("<a href='home.html'><img src='Img/btn-vt.jpg'/></a>");
+            out.println("<fieldset>");
+            out.println("<legend>Juros Simples</legend>");
+            out.println("<form>");
+            
+            out.println("<Table>");
+                                
+            out.println("<tr>");
+            out.println("<td>");
+            out.println("<label>Capital:</label>");
+            out.println("</td>");
+            out.println("<td>");
+            out.println("<input type='text' id='c' value='"+c+"'/>");
+            out.println("</td>");
+            out.println("</tr>");
+            
+            out.println("<tr>");
+            out.println("<td>");
+            out.println("<label>Taxa de Juros:</label>");
+            out.println("</td>");
+            out.println("<td>");
+            out.println("<input type='text' id='t' value='"+t+"'/>");
+            out.println("</td>");
+            out.println("</tr>");
+            
+            out.println("<tr>");
+            out.println("<td>");
+            out.println("<label>Número de Períodos:</label>");
+            out.println("</td>");
+            out.println("<td>");
+            out.println("<input type='text' id='n' value='"+n+"'/>");
+            out.println("</td>");
+            out.println("</tr>");
+            
+            out.println("<tr>");
+            out.println("<td colspan='2'>");
+            out.println("<input type='submit' value='Calcular'/>");
+            out.println("</td>");
+            out.println("</tr>");
+            
+            out.println("<tr>");
+            out.println("<td>Valor do juros</td>");
+            j = c*(t/100)*n;
+            out.println("<td>"+c+" = "+j+"</td>");
+            out.println("</tr>");
+            
+            out.println("</Table>");
+            out.println("</form>");
+            out.println("</fieldset>");
+                        
+            out.println("<br/><a href='home.html'><img src='Img/btn-vt.jpg'/></a>");
+            
+            for(int i=1; i<=3; i++){
+            out.println("<u>"+c+" = "+j+"</u>");
+            }
             
             out.println("</body>");
             out.println("</html>");
