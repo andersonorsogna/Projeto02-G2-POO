@@ -43,10 +43,10 @@ public class JuroscompostoServlet extends HttpServlet {
             
             out.println("<center>");
             
-            out.println("<h2>");
+            out.println("<h1>");
             out.println("<img src='Img/icon-fin-pb.jpg' width='30' height='30'/>");
             out.println("Juros Composto");
-            out.println("</h2>");
+            out.println("</h1>");
             
             out.println("</center>");
             
