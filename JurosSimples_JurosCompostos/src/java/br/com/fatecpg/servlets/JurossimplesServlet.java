@@ -71,11 +71,13 @@ public class JurossimplesServlet extends HttpServlet {
             out.println("<legend>Juros Simples</legend>");
             out.println("<form>");
             
+            out.println("<p>");
+            
             out.println("<Table>");
                                 
             out.println("<tr>");
-            out.println("<td>");
-            out.println("<label>Capital:</label>");
+            out.println("<td align=right>");
+            out.println("<label>Capital (R$):</label>");
             out.println("</td>");
             out.println("<td>");
             out.println("<input type='text' name='c' value='"+c+"'/>");
@@ -83,8 +85,8 @@ public class JurossimplesServlet extends HttpServlet {
             out.println("</tr>");
             
             out.println("<tr>");
-            out.println("<td>");
-            out.println("<label>Taxa de Juros:</label>");
+            out.println("<td align=right>");
+            out.println("<label>Taxa de Juros (%):</label>");
             out.println("</td>");
             out.println("<td>");
             out.println("<input type='text' name='t' value='"+t+"'/>");
@@ -93,17 +95,19 @@ public class JurossimplesServlet extends HttpServlet {
             out.println("</tr>");
             
             out.println("<tr>");
-            out.println("<td>");
-            out.println("<label>Número de Períodos:</label>");
+            out.println("<td align=right>");
+            out.println("<label>Número de Períodos (Meses):</label>");
             out.println("</td>");
             out.println("<td>");
             out.println("<input type='text' name='n' value='"+n+"'/>");
             out.println("</td>");
             out.println("</tr>");
             
+            
+            
             out.println("<tr>");
-            out.println("<td colspan='2'>");
-            out.println("<input type='submit' value='Calcular'/>");
+            out.println("<td colspan='3' align=center>");
+            out.println("<p><input type='submit' value='Calcular'/>");
             //t = t/100;
             //c = c * t * n;
             //j = c;
