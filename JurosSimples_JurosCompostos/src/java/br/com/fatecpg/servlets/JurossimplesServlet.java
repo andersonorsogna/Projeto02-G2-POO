@@ -38,7 +38,7 @@ public class JurossimplesServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title> :: Juros Simples ::</title>");            
+            out.println("<title> :: Juros Compostos ::</title>");            
             out.println("</head>");
             out.println("<body>");
            
@@ -70,7 +70,7 @@ public class JurossimplesServlet extends HttpServlet {
             out.println("</center>");
             
             out.println("<fieldset>");
-            out.println("<legend>Juros Simples</legend>");
+            out.println("<legend>Juros compostos</legend>");
             out.println("<form>");
             
             out.println("<p>");
@@ -114,11 +114,12 @@ public class JurossimplesServlet extends HttpServlet {
             //c = c * t * n;
             //j = c;
             
+            
             out.println("</td>");
             out.println("</tr>");
             
             out.println("<tr>");
-            
+           
             out.println("<td><b>Juros Total (R$): "+ cj.format(j/100) +"</td>");
             
             out.println("<td><b>Montante Total (R$): "+ cm.format(m) +"</td>");
@@ -126,6 +127,14 @@ public class JurossimplesServlet extends HttpServlet {
             out.println("</tr>");
             
             out.println("</Table>");
+            out.println("<table>");
+            for(int i=1; i<=10; i++){
+                out.println("<tr>");
+                out.println("<td>"+n+" x "+i+" = </td>");
+                out.println("<td>"+(n*i)+"</td>");
+                out.println("</tr>");
+            }
+            out.println("</table>");
             out.println("</form>");
             out.println("</fieldset>");
                         
