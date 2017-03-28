@@ -45,15 +45,15 @@ public class JurossimplesServlet extends HttpServlet {
                 try{ c = Float.parseFloat(request.getParameter("c"));
                 }catch(Exception ex){}
                 
-                float t = 0;
+               float t = 0;
                 try{ t = Float.parseFloat(request.getParameter("t"));
                 }catch(Exception ex){}
                 
-                int n = 0;
+               int n = 0;
                 try{ n = Integer.parseInt(request.getParameter("n"));
                 }catch(Exception ex){}
-                float j = c*( +(t*n));
-                float m = j/100 + c;
+                Float j = c*( +(t*n));
+                Float m = j/100 + c;
             
             out.println("<center>");
            
@@ -78,7 +78,7 @@ public class JurossimplesServlet extends HttpServlet {
             out.println("<label>Capital (R$):</label>");
             out.println("</td>");
             out.println("<td>");
-            out.println("<input type='text' name='c' maxlength='20' placeholder='"+c+"'/>");
+            out.println("<input type='text' name='c' maxlength='20' placeholder='ex:25000'"+c+"'/>");
             out.println("</td>");
             out.println("</tr>");
             
@@ -87,7 +87,7 @@ public class JurossimplesServlet extends HttpServlet {
             out.println("<label>Taxa de Juros (%):</label>");
             out.println("</td>");
             out.println("<td>");
-            out.println("<input type='text' name='t' maxlength='20' placeholder='"+t+"'/>");
+            out.println("<input type='text' name='t' maxlength='20' placeholder='ex:15'"+t+"'/>");
             
             out.println("</td>");
             out.println("</tr>");
@@ -97,7 +97,7 @@ public class JurossimplesServlet extends HttpServlet {
             out.println("<label>Número de Períodos (Meses):</label>");
             out.println("</td>");
             out.println("<td>");
-            out.println("<input type='text' name='n' maxlength='20' placeholder='"+n+"'/>");
+            out.println("<input type='text' name='n' maxlength='20' placeholder='ex:12'"+n+"'/>");
             out.println("</td>");
             out.println("</tr>");
             
@@ -115,9 +115,9 @@ public class JurossimplesServlet extends HttpServlet {
             
             out.println("<tr>");
             
-            out.println("<td>Juros Total (R$): "+ j/100 +"</td>");
+            out.println("<td><b>Juros Total (R$): "+ j/100 +"</td>");
             
-            out.println("<td>Montante Total (R$): "+ m +"</td>");
+            out.println("<td><b>Montante Total (R$): "+ m +"</td>");
         
             out.println("</tr>");
             
