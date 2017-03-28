@@ -52,7 +52,7 @@ public class HomeServlet extends HttpServlet {
                         
             out.println("<tr>");
             out.println("<td>");
-            out.println("<b>Integrantes:</b> <br/><br/>-Anderson Orsogna Esteves<br/>-André Tripode Colognesi<br/>-João Augusto V. Viana<br/>-Raul Seixas 10.000 anos atrás<br/>");
+            out.println("<b>Integrantes:</b> <br/><br/>-Anderson Orsogna Esteves<br/>-André Tripode Colognesi<br/>-João Augusto V. Viana<br/>-Raul G. P. G. da Silva<br/>");
             out.println("</td>");
             out.println("<td width='620'>");
             out.println("<img src='Img/financeiro022.jpg' width='620' height='350'/>");
