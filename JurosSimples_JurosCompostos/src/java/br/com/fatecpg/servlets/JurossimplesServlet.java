@@ -116,11 +116,10 @@ public class JurossimplesServlet extends HttpServlet {
             out.println("</tr>");
             
             out.println("<tr>");
-            out.println("<td>Valor do juros:</td>");
-           
-            out.println("<td>" + "R$ "  + j/100 + "</td>");
-            out.println("<td>Total do montante:</td>");
-            out.println("<td>" + "R$ " + m + "</td>");
+            
+            out.println("<td>Juros Total (R$): "+ j/100 +"</td>");
+            
+            out.println("<td>Montante Total (R$): "+ m +"</td>");
         
             out.println("</tr>");
             
