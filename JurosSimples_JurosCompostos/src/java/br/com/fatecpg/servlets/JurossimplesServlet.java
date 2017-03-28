@@ -41,20 +41,18 @@ public class JurossimplesServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
            
-                float j = 0;
-                
-                int c = 0;
-                try{ c = Integer.parseInt(request.getParameter("c"));
+                float c = 0;
+                try{ c = Float.parseFloat(request.getParameter("c"));
                 }catch(Exception ex){}
                 
-                int t = 0;
-                try{ t = Integer.parseInt(request.getParameter("t"));
+                float t = 0;
+                try{ t = Float.parseFloat(request.getParameter("t"));
                 }catch(Exception ex){}
                 
                 int n = 0;
                 try{ n = Integer.parseInt(request.getParameter("n"));
                 }catch(Exception ex){}
-                j = c*( +(t*n));
+                float j = c*( +(t*n));
                 float m = j/100 + c;
             
             out.println("<center>");
@@ -80,7 +78,7 @@ public class JurossimplesServlet extends HttpServlet {
             out.println("<label>Capital (R$):</label>");
             out.println("</td>");
             out.println("<td>");
-            out.println("<input type='text' name='c' value='"+c+"'/>");
+            out.println("<input type='text' name='c' maxlength='20' placeholder='"+c+"'/>");
             out.println("</td>");
             out.println("</tr>");
             
@@ -89,7 +87,7 @@ public class JurossimplesServlet extends HttpServlet {
             out.println("<label>Taxa de Juros (%):</label>");
             out.println("</td>");
             out.println("<td>");
-            out.println("<input type='text' name='t' value='"+t+"'/>");
+            out.println("<input type='text' name='t' maxlength='20' placeholder='"+t+"'/>");
             
             out.println("</td>");
             out.println("</tr>");
@@ -99,7 +97,7 @@ public class JurossimplesServlet extends HttpServlet {
             out.println("<label>Número de Períodos (Meses):</label>");
             out.println("</td>");
             out.println("<td>");
-            out.println("<input type='text' name='n' value='"+n+"'/>");
+            out.println("<input type='text' name='n' maxlength='20' placeholder='"+n+"'/>");
             out.println("</td>");
             out.println("</tr>");
             
