@@ -7,6 +7,7 @@ package br.com.fatecpg.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.DecimalFormat;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -41,14 +42,17 @@ public class JurossimplesServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
            
-                float c = 0;
+               float c = 0;
                 try{ c = Float.parseFloat(request.getParameter("c"));
                 }catch(Exception ex){}
                 
                float t = 0;
                 try{ t = Float.parseFloat(request.getParameter("t"));
                 }catch(Exception ex){}
-                
+               
+               DecimalFormat cj = new DecimalFormat("#.00"); 
+               DecimalFormat cm = new DecimalFormat("#.00");
+               
                int n = 0;
                 try{ n = Integer.parseInt(request.getParameter("n"));
                 }catch(Exception ex){}
@@ -115,9 +119,9 @@ public class JurossimplesServlet extends HttpServlet {
             
             out.println("<tr>");
             
-            out.println("<td><b>Juros Total (R$): "+ j/100 +"</td>");
+            out.println("<td><b>Juros Total (R$): "+ cj.format(j/100) +"</td>");
             
-            out.println("<td><b>Montante Total (R$): "+ m +"</td>");
+            out.println("<td><b>Montante Total (R$): "+ cm.format(m) +"</td>");
         
             out.println("</tr>");
             
