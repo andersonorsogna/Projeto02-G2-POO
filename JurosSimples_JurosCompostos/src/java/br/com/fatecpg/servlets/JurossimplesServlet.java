@@ -110,9 +110,7 @@ public class JurossimplesServlet extends HttpServlet {
             out.println("<tr>");
             out.println("<td colspan='3' align=center>");
             out.println("<p><input type='submit' value='Calcular'/>");
-            //t = t/100;
-            //c = c * t * n;
-            //j = c;
+           
             
             
             out.println("</td>");
@@ -133,9 +131,7 @@ public class JurossimplesServlet extends HttpServlet {
                         
             out.println("<br/><a href='home.html'><img src='Img/btn-vt.jpg'/></a>");
             
-            //for(int i=1; i<=3; i++){
-            //out.println("<u>"+j+"</u>");
-            //}
+            
             
             out.println("</body>");
             out.println("</html>");
