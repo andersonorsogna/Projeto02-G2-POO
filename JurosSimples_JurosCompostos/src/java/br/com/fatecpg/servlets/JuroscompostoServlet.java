@@ -80,7 +80,7 @@ public class JuroscompostoServlet extends HttpServlet {
             out.println("<label>Capital (R$):</label>");
             out.println("</td>");
             out.println("<td>");
-            out.println("<input type='text' name='c' maxlength='20' placeholder='ex:25000'"+c+"'/>");
+            out.println("<input type='number' name='c' maxlength='20' placeholder='ex:25000'"+c+"'/>");
             out.println("</td>");
             out.println("</tr>");
             
@@ -89,7 +89,7 @@ public class JuroscompostoServlet extends HttpServlet {
             out.println("<label>Taxa de Juros (%):</label>");
             out.println("</td>");
             out.println("<td>");
-            out.println("<input type='text' name='t' maxlength='20' placeholder='ex:15'"+t+"'/>");
+            out.println("<input type='number' name='t' maxlength='20' placeholder='ex:15'"+t+"'/>");
             
             out.println("</td>");
             out.println("</tr>");
@@ -99,7 +99,7 @@ public class JuroscompostoServlet extends HttpServlet {
             out.println("<label>Número de Períodos (Meses):</label>");
             out.println("</td>");
             out.println("<td>");
-            out.println("<input type='text' name='n' maxlength='20' placeholder='ex:12'"+n+"'/>");
+            out.println("<input type='number' name='n' maxlength='20' placeholder='ex:12'"+n+"'/>");
             out.println("</td>");
             out.println("</tr>");
             
