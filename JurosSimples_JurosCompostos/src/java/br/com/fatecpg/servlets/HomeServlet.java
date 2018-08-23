@@ -63,7 +63,7 @@ public class HomeServlet extends HttpServlet {
             out.println("<td colspan='2'>");
             out.println("<h2>Aplicação</h2><br/><br/>"
                     + "<u><b>Juros Simples:</u></b><br/>"
-                    + "O regime de juros será simples quando o percentual de juros incidir apenas sobre o valor principal. Sobre os juros gerados a cada período não incidirão novos juros. Valor Principal ou simplesmente principal é o valor inicial emprestado ou aplicado, antes de somarmos os juros.<br/>"
+                    + "O juros será simples quando o percentual de juros incidir apenas sobre o valor principal. Sobre os juros gerados a cada período não incidirão novos juros. Valor Principal ou simplesmente principal é o valor inicial emprestado ou aplicado, antes de somarmos os juros.<br/>"
                     + "<u><b>Juros Composto:</u></b><br/>"
                     + "O regime de juros compostos é o mais comum no sistema financeiro e portanto, o mais útil para cálculos de problemas do dia-a-dia. Os juros gerados a cada período são incorporados ao principal para o cálculo dos juros do período seguinte.");
             out.println("</td>");
